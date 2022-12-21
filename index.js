@@ -92,7 +92,7 @@ app.get('/alunos/delete/:id', function (req, res) {
         res.redirect('/')
     }).catch((err) => {
     console.log(err);
-    req.flash('error', 'Ocorreu um erro ao remover o usuário')
+    req.flash('error', 'Ocorreu um erro na hora de remover o usuário')
     res.redirect('/');
 
     });
